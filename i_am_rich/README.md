@@ -1,16 +1,11 @@
-# i_am_rich
+# [UI Practice] I Am Rich
+<img src="https://user-images.githubusercontent.com/55652161/124145273-9d757600-dac7-11eb-824b-86128a42e2c9.png">
+- Flutter App `UI Toolkit` 사용. 레고 블럭을 쌓는 것 처럼 `Widget`을 가지고 UI를 쉽게 구현할 수 있음
+- `Scaffold` : 공통된 요소를 표현하는데 효과적임. AppBar, FloatingButton, Drawer 등 다양한 위젯을 가짐.
 
-A new Flutter project.
+<br/>
 
-## Getting Started
+## 개발 환경
+Android Studio 4.2.1
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<br/>
