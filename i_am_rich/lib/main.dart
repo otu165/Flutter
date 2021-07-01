@@ -4,9 +4,18 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Center(
-        // Center 위젯 안에 Text 위젯을 넣음으로써 가운데정렬을 구현할 수 있음
-        child: Text('Hello World!'),
+      home: Scaffold(
+        // AppBar, Body 등 여러 위젯을 종합한 클래스
+        backgroundColor: Colors.blueGrey, // 전체 background color 변경
+        appBar: AppBar(
+          title: Text('YOU ARE RICH'),
+          backgroundColor: Colors.blueGrey[900], // Material Palette 에서 가져온 색상
+        ),
+        body: Center(
+          child: Image(
+            image: AssetImage('images/diamond.png'),
+          ),
+        ),
       ),
     ),
   );
