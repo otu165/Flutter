@@ -9,43 +9,34 @@ class MyApp extends StatelessWidget { // stateless : hot reload 기능을 포함
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('App Bar Title'),
-          backgroundColor: Colors.blue[300],
-        ),
-        backgroundColor: Colors.white,
-        body: SafeArea( // safe area : status bar 를 제외한 영역을 가리킴
-          child: Container(
-            /**
-             * [Container]
-             * - child 가 없다면 match_parent 크기를 가짐
-             * - 반드시 한 개의 child 가짐
-             */
-            color: Colors.blue[900],
-            child: Center(
-              child: new Text( // TextWidget
-                'Hello Flutter!',
+        backgroundColor: Colors.teal,
+        body: SafeArea( // SafeArea : Status Bar 를 제외한 영역을 가리킴
+          child: Column( // Horizontal sort
+            children: [
+              CircleAvatar(
+                backgroundImage: AssetImage('images/deer.jpg'),
+                radius: 50.0,
+              ),
+              Text(
+                'Deer',
                 style: TextStyle(
+                  fontSize: 40.0,
                   color: Colors.white,
-                  fontSize: 25
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'lobster' // font 적용하려면 project rebuild 해야함
                 ),
               ),
-            ),
-            // child: Text('Hello'),
-            width: 300,
-            // 단위는 px
-            height: 100,
-            padding: EdgeInsets.all(15.0),
-            margin: EdgeInsets.all(50),
-            /**
-             * [EdgeInsets]
-             * - margin 수치 제공
-             *
-             * 1. EdgeInsets.all : LTRB 일괄 수치
-             * 2. EdgeInsets.fromLTRB(left, top, right, bottom) : 개별수치
-             * 3. EdgeInsets.symmetric(vertical, horizontal) : LT
-             * 4. EdgeInsets.only() : LTRB 중 하나
-             */
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.teal.shade100, // teal[100] 와 동일함
+                  fontFamily: 'SansPro',
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+            ],
           ),
         ),
       ),
